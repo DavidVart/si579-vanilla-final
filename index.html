@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Helper - SI 579</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <main class="app-container" aria-label="Study Helper timer">
+    <header class="app-header">
+      <h1>Study Helper – Vanilla</h1>
+      <p class="subtitle">David Vargas – davidva</p>
+    </header>
+
+    <section class="description">
+      <p>Choose a study session length, start the timer, and track your productivity!</p>
+    </section>
+
+    <section class="presets">
+      <h2>Select Duration</h2>
+      <div class="preset-buttons">
+        <button class="preset-btn" data-minutes="25">25 min</button>
+        <button class="preset-btn" data-minutes="45">45 min</button>
+        <button class="preset-btn" data-minutes="60">60 min</button>
+      </div>
+    </section>
+
+    <section class="timer-section">
+      <div class="timer-display">25:00</div>
+      <div class="completion-message" hidden aria-live="polite">Session complete 🎉</div>
+    </section>
+
+    <section class="controls">
+      <button class="control-btn start-btn">Start</button>
+      <button class="control-btn pause-btn">Pause</button>
+      <button class="control-btn reset-btn">Reset</button>
+    </section>
+
+    <section class="stats">
+      <p class="sessions-text">Sessions completed today: <span class="sessions-count">0</span></p>
+    </section>
+  </main>
+</body>
+</html>
